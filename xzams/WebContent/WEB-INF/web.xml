@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>xzams</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.xzsoft.xip.attachment.HttpAttServerListener</listener-class>
+  </listener>
+  <servlet>
+    <description>HTTP附件服务器服务Servlet，实现附件的上传下载和删除</description>
+    <display-name>AttServer</display-name>
+    <servlet-name>AttServer</servlet-name>
+    <servlet-class>com.xzsoft.xip.attachment.XztHtpAttServer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AttServer</servlet-name>
+    <url-pattern>/AttServer</url-pattern>
+  </servlet-mapping>
+</web-app>

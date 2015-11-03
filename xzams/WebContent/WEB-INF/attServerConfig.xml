@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<userName>admin</userName>
+	<password>xzsoft</password>
+	<maxFileSize>1024</maxFileSize>
+	<basePath>D:\upload\jsjd\</basePath> <!--自定义目录一定要加上\ 如：E:\upload\  -->
+</config>
